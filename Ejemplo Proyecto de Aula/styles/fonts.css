@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'fuenteicomoon';
+  src:  url('../fonts/fuenteicomoon.eot?pl6amn');
+  src:  url('../fonts/fuenteicomoon.eot?pl6amn#iefix') format('embedded-opentype'),
+    url('../fonts/fuenteicomoon.ttf?pl6amn') format('truetype'),
+    url('../fonts/fuenteicomoon.woff?pl6amn') format('woff'),
+    url('../fonts/fuenteicomoon.svg?pl6amn#fuenteicomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;}
+
+  @font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url(../fonts/yanonekaffeesatz-bold.ttf);
+    font-weight: bold;}
+ 
+@font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url(../fonts/yanonekaffeesatz-regular.ttf);
+    font-weight: sans-serif;}
+ 
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/opensans-regular.ttf);
+    font-weight: sans-serif;}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fuenteicomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  margin-right: 3px;
+  content: "\e900";
+}
+.icon-quill:before {
+  margin-right: 3px;
+  content: "\e907";
+}
+.icon-images:before {
+  margin-right: 3px;
+  content: "\e90e";
+}
+.icon-music:before {
+  margin-right: 3px;
+  content: "\e911";
+}
+.icon-spoon-knife:before {
+  margin-right: 3px;
+  content: "\e9a3";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-svg:before {
+  margin-right: 3px;
+  content: "\eae9";
+}
+

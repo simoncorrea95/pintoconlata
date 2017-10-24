@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../styles/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz:300,400,700" rel="stylesheet">
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<title>Para Bailar</title>
+	</head>
+
+	<body id="bodybl">
+
+		<!-- Menu hamburguesa-->
+		<section class="menu_bar">
+			<a  class="bt-menu"><span class="icon-menu"></span>
+
+				<img src="../images/logo3.png" id="logo">
+				<form action="">
+        		<input type="search" name="nombre" placeholder="Buscar">
+    			</form>
+			</a>
+			
+		</section>
+		<!-- Menu hamburguesa-->
+
+		<header>
+
+		<img src="../images/logo.png" id="logo">
+		<img src="../images/medellin.png" id="medellin">
+		<section id="fecha">
+			<script>	
+
+			var dayarray=new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado")
+			var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+
+			function getthedate(){
+			var mydate=new Date()
+			var year=mydate.getYear()
+			if (year < 1000)
+			year+=1900
+			var day=mydate.getDay()
+			var month=mydate.getMonth()
+			var daym=mydate.getDate()
+			if (daym<10)
+			daym="0"+daym
+			var hours=mydate.getHours()
+			var minutes=mydate.getMinutes()
+			var seconds=mydate.getSeconds()
+			var dn="AM"
+			if (hours>=12)
+			dn="PM"
+			if (hours>12){
+			hours=hours-12
+			}
+			if (hours==0)
+			hours=12
+			if (minutes<=9)
+			minutes="0"+minutes
+			if (seconds<=9)
+			seconds="0"+seconds
+			//change font size here
+			var cdate="<small><font color='ffffff' face='Yanone Kaffeesatz'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
+			+"</b></font></small>"
+			if (document.all)
+			document.all.clock.innerHTML=cdate
+			else if (document.getElementById)
+			document.getElementById("clock").innerHTML=cdate
+			else
+			document.write(cdate)
+			}
+			if (!document.all&&!document.getElementById)
+			getthedate()
+			function goforit(){
+			if (document.all||document.getElementById)
+			setInterval("getthedate()",1000)
+			}
+
+			</script>
+			<span id="clock"></span>
+		</section>
+
+		<form action="">
+        	<input type="search" name="nombre" placeholder="Buscar">
+    	</form>
+
+		<article id="redes"> 
+		<a href="https://facebook.com/" ><span class="icon-facebook"></span></a>
+		<a href="https://youtube.com/"><span class="icon-youtube"></span>
+		<a href="https://twitter.com/"><span class="icon-twitter"></span></a>
+		<a href="https://instagram.com/"><span class="icon-instagram"></span></a>
+		</article>
+
+		</header>
+
+		
+	<nav> 
+		<ul>
+			<li class="na">  <a href="../index.html" class="botonera"><span class="icon-home"></span>Inicio</a></li>
+			<li class="na"><a href="../pages/paracomer.html" class="botonera"><span class="icon-spoon-knife"></span>Para Comer</a></li>
+			<li class="na"><a href="../pages/parabailar.html" class="botonera"><span class="icon-music"></span>Para Bailar</a></li>
+			<li class="na"><a href="../pages/experiencias.html" class="botonera"><span class="icon-svg"></span>Experiencias</a></li>
+			<li class="na"><a href="../pages/galeria.html" class="botonera"><span class="icon-images"></span>Galería</a></li>
+			<li class="na"><a href="../pages/editorial.html" class="botonera"><span class="icon-quill"></span>Editorial</a></li>
+		</ul>
+	</nav>
+
+	
+</body>

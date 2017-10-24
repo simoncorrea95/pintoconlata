@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/estilos.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title>Rutas Alternas - Inicio</title>
+	
+	
+</head>
+	<body onLoad="goforit()"  >
+
+		<!-- Menu hamburguesa-->
+		<section class="menu_bar">
+		<input type="checkbox" class="checkbox" id="menu-toogle"/>
+		<label for="menu-toogle" class="menu-toogle"></label>
+		<nav class="nav">
+			<ul>
+ 			 	<li class="limh"><a href="index.html" class="nav__item current"><span class="icon-home"></span> Inicio </a></li>
+ 			 	<li class="limh"><a href="pages/paracomer.html" class="nav__item"><span class="icon-spoon-knife"></span>Para comer</a></li>
+ 			 	<li class="limh"><a href="pages/parabailar.html" class="nav__item"><span class="icon-music"></span>Para bailar</a></li>
+  				<li class="limh"><a href="pages/experiencias.html" class="nav__item"><span class="icon-svg"></span>Experiencias</a></li>
+  				<li class="limh"><a href="pages/galeria.html" class="nav__item"><span class="icon-images"></span>Galería</a></li>
+  				<li class="limh"><a href="pages/editorial.html" class="nav__item"><span class="icon-quill"></span>Editorial</a></li>
+  			</ul>
+		</nav>
+		</section>
+
+		<!-- Menu hamburguesa-->
+	
+		<header>
+
+			<img src="images/logo.png" id="logo">
+
+			<!--logo responsive-->
+			<img src="images/logo3.png" id="logorsp">
+			<!--logo responsive-->
+			
+			<img src="images/medellin.png" id="medellin">
+			<section id="fecha">
+				<script>
+	
+
+			var dayarray=new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado")
+			var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+
+			function getthedate(){
+			var mydate=new Date()
+			var year=mydate.getYear()
+			if (year < 1000)
+			year+=1900
+			var day=mydate.getDay()
+			var month=mydate.getMonth()
+			var daym=mydate.getDate()
+			if (daym<10)
+			daym="0"+daym
+			var hours=mydate.getHours()
+			var minutes=mydate.getMinutes()
+			var seconds=mydate.getSeconds()
+			var dn="AM"
+			if (hours>=12)
+			dn="PM"
+			if (hours>12){
+			hours=hours-12
+			}
+			if (hours==0)
+			hours=12
+			if (minutes<=9)
+			minutes="0"+minutes
+			if (seconds<=9)
+			seconds="0"+seconds
+			//change font size here
+			var cdate="<small><font color='ffffff' face='Yanone Kaffeesatz'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
+			+"</b></font></small>"
+			if (document.all)
+			document.all.clock.innerHTML=cdate
+			else if (document.getElementById)
+			document.getElementById("clock").innerHTML=cdate
+			else
+			document.write(cdate)
+			}
+			if (!document.all&&!document.getElementById)
+			getthedate()
+			function goforit(){
+			if (document.all||document.getElementById)
+			setInterval("getthedate()",1000)
+			}
+
+				</script>
+				<span id="clock"></span>
+			</section>
+	
+		<form action="">
+        	<input type="search" name="nombre" placeholder="Buscar">
+    	</form>
+
+		<article id="redes"> 
+		<a href="https://facebook.com/" ><span class="icon-facebook"></span></a>
+		<a href="https://youtube.com/"><span class="icon-youtube"></span>
+		<a href="https://twitter.com/"><span class="icon-twitter"></span></a>
+		<a href="https://instagram.com/"><span class="icon-instagram"></span></a>
+		</article>
+
+		</header>
+
+		
+	<nav  id="nav2"> 
+		<ul>
+			<li class="na">  <a href="index.html" class="botonera"><span class="icon-home"></span>Inicio</a></li>
+			<li class="na"><a href="pages/paracomer.html" class="botonera"><span class="icon-spoon-knife"></span>Para Comer</a></li>
+			<li class="na"><a href="pages/parabailar.html" class="botonera"><span class="icon-music"></span>Para Bailar</a></li>
+			<li class="na"><a href="pages/experiencias.html" class="botonera"><span class="icon-svg"></span>Experiencias</a></li>
+			<li class="na"><a href="pages/galeria.html" class="botonera"><span class="icon-images"></span>Galería</a></li>
+			<li class="na"><a href="pages/editorial.html" class="botonera"><span class="icon-quill"></span>Editorial</a></li>
+		</ul>
+	</nav>
+
+	<section id="paracomer1">
+			<a href="pages/paracomer.html"><h2 class="nombreseccion">Para comer</h2></a>
+
+			<a href="pages/paracomer.html"><h6 class="actualizacion"> Actualizado hace 5 horas</h6></a>
+
+			<a href="pages/paracomer.html"><h3 class="tituloid"> LOS MEJORES LUGARES </br> PARA CENAR EN LA CIUDAD</h3></a>
+
+			<!-- Imagen movil-->
+			<a href="pages/paracomer.html"><img src="images/comer.jpg" alt="Para Comer" title="Los mejores lugares para cenar" id="mvlpc1"></a>
+			<!-- Imagen movil-->
+	
+			<a href="pages/paracomer.html"><h4 class="entradillaid"> Un ‘parche’ tranquilo para experimentar diferentes platos y probar nuevos sabores.</h4></a>
+
+			<a href="pages/paracomer.html"><img src="images/pcindx.jpg" alt="Para_comer" title="Il Castello Restaurante" id="imgid">   </a>
+
+			<!-- Texto en responsive-->
+			<a href="pages/paracomer.html"><h4 class="textos" id="textopc1">La lista la conforman diversos restaurantes de la ciudad, los cuales se han encargado de brindarle a ciudadanos y turistas grandes experiencias y deliciosos sabores.</h4></a>
+			<!-- Texto en responsive-->
+
+			<!-- Imagen tableta-->
+			<a href="pages/paracomer.html"><img src="images/comerr.jpg" alt="Para Comer" title="Los mejores lugares para cenar" id="tblimg"></a>
+			<!-- Imagen tableta-->
+
+			
+		</section>
+	
+
+	<a href="http://www.udem.edu.co/" target="_new"><aside id="banner1"><iframe src="pages/banner_20pc.html" width="370" height="310" frameborder="0"></iframe></aside></a>
+
+	
+
+	<section id="galeria1">
+			<a href="pages/galeria.html"><h2 class="nombreseccion">Galería</h2></a>
+
+			<a href="pages/galeria.html"><h3 class="tituloid"> ¡NO DEJES DE DISFRUTAR!</h3></a>
+
+			<!-- Imagen movil-->
+			<article ></article>
+			<a href="pages/galeria.html"><img src="images/galeria.jpg" alt="Galería" title="No dejes de disfrutar" id="mvlgal"></a>
+			<!-- Imagen movil-->
+	
+			<a href="pages/galeria.html"><h4 class="textos"> Si te encuentras en Medellín, no olvides mirar las imágenes que se encuentran en esta galería, allí  encontrarás las grandes experiencias que vivirás en una o varias noches en la ciudad. Antójate de estos exquisitos  platos, seguramente desearás volver.</h4></a>
+	</section>
+
+	<section id="paracomer2">
+		<a href="pages/paracomer.html"><h2 class="nombreseccion">Para comer</h2></a>
+
+			<a href="pages/paracomer.html"><h3 class="tituloid"> MERCADO DEL RÍO: LLEGÓ PISANDO FUERTE </h3></a>
+
+			<!-- Imagen movil-->
+			<a href="pages/paracomer.html"><img src="images/mercado.jpg" alt="Para Comer" title="Mercado del Río" id="mvlpc2"></a>
+			<!-- Imagen movil-->			
+	
+			<a href="pages/paracomer.html"><h4 class="entradillaid">Un nuevo espacio que tuvo gran acogida en Medellín.</h4></a>
+
+			<a href="pages/paracomer.html"><img src="images/idx4.jpg" alt="Para_comer" title="Mercado del Río" id="imgpc2"></a>
+
+			<!-- Texto en repsonsive-->
+			<a href="pages/paracomer.html"><h4 class="textos" id="textopc2">Mercado del Río llega a la ciudad a finales del 2016 con una manera diferente de cenar, es el sueño de un grupo de personas que ha abierto sus puertas y pone a disposición de la ciudad su gran y diversa oferta gastronómica.</h4></a>
+			<!-- Texto en repsonsive-->
+	</section>	
+
+
+	<section id="parabailar1">
+		<a href="pages/parabailar.html"><h2 class="nombreseccion">Para bailar</h2></a>
+
+			<a href="pages/parabailar.html"><h6 class="actualizacion"> Actualizado hace 2 horas</h6></a>
+
+			<a href="pages/parabailar.html"><h3 class="tituloid">MEDELLÍN: PARA TODOS LOS GUSTOS</h3></a>
+
+			<!-- Imagen movil-->
+			<a href="pages/parabailar.html"><img src="images/bailar.jpg" alt="Para Bailar" title="Medellín: para todos los gustos" id="mvlbailar"></a>
+			<!-- Imagen movil-->
+			
+			<a href="pages/parabailar.html"><h4 class="entradillaid"> Como la segunda ciudad más grande de Colombia, podrás salir a divertirte en una gran variedad de lugares.</h4></a>
+
+			<a href="pages/parabailar.html"><h4 class="textos"> Al llegar a Medellín sentirás una energía vibrante. Disfrutar de la vida nocturna que la ciudad tiene para ofrecer, es una excelente manera de vivir la cultura de la ciudad. </h4></a>
+
+	</section>
+
+	<section id="editorial1">
+			<a href="pages/editorial.html"><h2 class="nombreseccion">Editorial</h2></a>
+
+			<a href="pages/editorial.html"><h3 class="tituloid"> RUTAS ALTERNAS </h3></a>
+
+			<!-- Imagen movil-->
+			<a href="pages/editorial.html"><img src="images/editorial.jpg" alt="Editorial" title="Rutas Alternas" id="mvledit"></a>
+			<!-- Imagen movil-->
+				
+			<a href="pages/editorial.html"><h4 class="entradillaid"> Medellín: una ciudad prometedora de día y noche.</h4></a>
+
+			<a href="pages/editorial.html"><img src="images/idx2.jpg" alt="Editorial" title="Rutas Alternas en Medellín" id="imgedi"></a>
+
+			<!-- Imagen tableta-->
+			<a href="pages/editorial.html"><img src="images/editotabl.jpg" alt="Editorial" title="Rutas Alternas" id="tblimgedi"></a>
+			<!-- Imagen tableta-->
+
+			<!-- Texto en repsonsive-->
+			<a href="pages/paracomer.html"><h4 class="textos" id="textoedi">Medellín ha sido, desde hace mucho tiempo, un lugar marcado por la violencia y el narcotráfico. No obstante, las últimas décadas ha mostrado un notorio esfuerzo por cambiar su imagen y mostrarse como una sociedad creativa y una ciudad innovadora.</h4></a>
+			<!-- Texto en repsonsive-->
+			
+	</section>
+
+	<section id="experiencias1">
+			<a href="pages/experiencias.html"><h2 class="nombreseccion">Experiencias</h2></a>
+
+			<a href="pages/experiencias.html"><h3 class="tituloid"> LO MEJOR DE MEDELLÍN </h3></a>
+
+			<!-- Imagen movil-->
+			<a href="pages/experiencias.html"><img src="images/experiencias.jpg" alt="Experiencias" title="Lo mejor de Medellín" id="mvlexp"></a>
+			<!-- Imagen movil-->
+	
+			<a href="pages/experiencias.html"><h4 class="entradillaid"> Ciudad que se queda con el corazón de cada visitante.</h4></a>
+
+			<a href="pages/experiencias.html"><img src="images/idx1.jpg" alt="Experiencias" title="Lo mejor de Medellín" id="imgexp"></a>
+
+						
+			<!-- Texto en repsonsive-->
+			<a href="pages/paracomer.html"><h4 class="textos" id="textoexp2">Pregúntale a cualquier viajero sobre Sudamérica y es probable que te cuente alguna historia loca sobre Medellín. </h4></a>
+			<!-- Texto en repsonsive-->
+	</section>
+
+	
+	<!-- Sección banner responsive tableta-->
+	
+	<a href="http://www.udem.edu.co/" target="_new"><aside id="bannersp"><iframe src="pages/banner_20tableta.html" width="702" height="120" frameborder="0"></iframe></aside></a>
+	<!-- Sección banner responsive tableta-->
+
+	<!-- Sección banner responsive celular-->
+	
+	<a href="http://www.udem.edu.co/" target="_new"><aside id="bannersp2"><iframe src="pages/banner_20movil.html" width="340" height="100" frameborder="0"></iframe></aside></a>
+	<!-- Sección banner responsive celular-->
+
+	
+
+	<footer >
+		<img src="images/logo2.png" id="logo2">
+
+		<nav id="navf"> 
+			<ul id=ulf>
+				<li><a href="index.html" class="foot">- Inicio</a></li>
+				<li><a href="pages/paracomer.html" class="foot">- Para Comer</a></li>
+				<li><a href="pages/parabailar.html" class="foot">- Para Bailar</a></li>
+				<li><a href="pages/experiencias.html" class="foot">- Experiencias</a></li>
+				<li><a href="pages/galeria.html" class="foot">- Galería</a></li>
+				<li><a href="pages/editorial.html" class="foot">- Editorial</a></li>
+			</ul>
+		</nav>
+
+		<p id="textof">Rutas Alternas - Teléfono: (57)(4)3450675 </br>
+		Dirección: Carrera 59 N° 23 - 9 Medellín - Colombia </br>
+		© Copyright 2012 ® Todos los Derechos Reservados </p>
+
+	</footer>
+	
+</body>
+</html>
+ 

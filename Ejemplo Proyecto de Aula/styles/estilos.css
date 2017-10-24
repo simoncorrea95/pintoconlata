@@ -1,0 +1,897 @@
+/* Estilos Globales */
+*{margin: 0px; padding: 0px;}
+
+html{background: #000;}
+body{
+margin:0px auto;
+background: rgb(0,0,0);}
+
+a{text-decoration: none;}
+
+/*Estilos para Escritorio*/
+@media only screen and (min-width:769px)
+
+{	
+	body{width: 80%;
+	height:1600px;	
+	min-width: 850px;
+	max-width: 1050px;}
+
+	
+	header{width: 100%;
+	height: 180px;
+	background: url(../images/header.jpg);}
+ 
+	#logo{margin-left: 6.3%;
+ 	margin-top: 3.8%;
+ 	float:left;}
+ 		#logorsp{display: none;}
+
+	#medellin{margin-top: 4%;
+	margin-left: 30%;
+	float: left}
+
+	
+		input[type="search"]{
+    	width: 15%; /*ancho por defecto*/
+    	float: right;
+    	margin-right: 3%;
+    	background: #ededed url('../images/search-icon.png') no-repeat 9px center; /*icono lupa*/
+   	 	padding: 9px 10px 9px 32px;
+    	border-radius: 8em;
+    	-webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    	-moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    	-o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    	transition: all .5s; /* transición de .5seg a todos los elementos*/
+    	outline: none; /* ocultar el fucos automático de los input */
+		}
+
+		input[type="search"]:focus{
+   		width: 8%; /*tamaño del boton buscar al hacer click*/
+    	padding-left: 20%; /*espacio entre el icono lupa y el placeholder*/
+    	color: #000;
+    	float: right;
+    	background-color: #fff;}
+
+    	
+	#redes{width: 15%;
+		margin-top: 1%;
+		margin-right: 2%;
+		float: right;}
+
+			.icon-facebook{font-size: 1.2em;
+			color: #fff;
+			float: left;
+			 margin-right: 8%;}
+
+			.icon-twitter{font-size: 1.2em;
+			color: #fff;
+			float: left;
+			margin-right: 8%;}
+			.icon-youtube{font-size: 1.2em;
+			color: #fff;
+			float: left;
+			margin-right: 8%;}
+
+			.icon-instagram{font-size: 1.2em;
+			color: #fff;}
+	
+
+	#fecha{width: 18%;
+	padding-left: 2%;
+	margin: 4% 0% 1% 0% ;
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', bold;
+	font-size: 1.1em;
+	float: right; }
+
+	.menu_bar {
+	display:none;}
+
+
+	#nav2{width: 95.6%;
+	height: 60px;
+	background: #3EACA8;
+	padding-right: 2.2%;
+	padding-left: 2.2%;}
+
+	ul{list-style-type: none;}
+
+	.na{float: left;
+		width: 16%;}
+
+	a{text-decoration: none;}
+
+	.botonera{display: block;
+	height: 40px;
+	padding-top: 20px;
+	text-decoration: none;
+	font-size: 1.25em;
+	color: #000;
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: center;
+	}
+
+  	.botonera:hover{ color: #fff;}
+
+  #paracomer1{
+  width: 50%;
+  height: 535px;
+  background: #fff;
+  margin-left: 4%;
+  margin-top: 3%;
+  padding: 2%;
+  float:left;}
+
+		#imgid{margin-top: 20px;
+			width: 100%;
+			height: 55%;}
+		#textopc1{display: none;}
+		#mvlpc1{display: none;}
+		#tblimg{display: none;}
+
+  #banner1{
+  	width: 35%;
+  	height: 310px;
+  	background: #fff;
+  	margin-left: 3%;
+  	margin-top: 3%;
+  	float: left;}
+
+  	#bpc{width: 35%;
+  		height: 310px;}
+  	#bannersp{display: none;}
+  	#bannersp2{display: none;}
+
+  	
+#galeria1{
+	width: 31%;
+	height: 205px;
+	background: #fff;
+	margin-top: 2.2%;
+	margin-left: 3%;
+	padding: 2%;
+	float: left;}
+		#mvlgal{display: none;}
+
+#parabailar1{
+	width: 58%;
+	height: 190px;
+	background: #fff;
+	padding: 2%;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;}
+		#mvlbailar{display: none;}
+
+#editorial1{
+	width: 26%;
+	height: 344px;
+	padding: 2%;
+	background: #fff;
+	margin-top: 2%;
+	margin-left: 3%;
+	float: left;}
+		#textoedi{display: none;}
+		#mvledit{display: none;}
+		#tblimgedi{display: none;}
+
+#experiencias1{
+	width: 26%;
+	height: 344px;
+	padding: 2%;
+	background: #fff;
+	margin-top: 2%;
+	margin-left: 1.9%;
+	float: left;}
+		#textoexp2{display: none;}
+		#mvlexp{display: none;}
+
+#paracomer2{
+	width: 23%;
+	height: 594px;
+	padding: 2%;
+	background: #fff;
+	margin-top: 3%;
+	margin-left: 4%;
+	float: left;}
+
+		#textopc2{display: none;}
+		#mvlpc2{display: none;}
+
+	.nombreseccion{width: 100px;
+	height: 20px;
+	background:#3EACA8;
+	color: #fff;
+	padding: 5px; 
+	font-size: 1.25em; 
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: left;}
+
+	.actualizacion{ color: #000;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 0.62em;
+	text-decoration: none;
+	float: right;}
+
+	.tituloid{
+	color: #000;
+	font-size: 2.5em; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border-bottom: 2px #000 solid;
+	text-decoration: none;
+	margin-top: 10px;
+	text-align: left;}
+
+		.tituloid:hover{color: #3EACA8;}
+
+
+	.entradillaid{color: #547A82;
+	font-size: 1.75em; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	text-align: left;}
+		.entradillaid:hover{color: #000;}
+
+.textos{color: #000;
+font-size: 0.87em;
+font-family: 'Open Sans', sans-serif;
+margin-top: 10px;
+text-decoration: none;
+text-align: justify;}
+
+	
+footer{width: 100%;
+height: 108px;
+margin-top: 2.5%;
+padding-top: 2.5%;
+border-top: #fff 0.1em dashed;
+background-color: #000;
+float: left;}
+
+#logo2{margin-top: 1%;
+	margin-left: 80px;
+	margin-right: 9%;
+	margin-bottom: 2%;
+	float: left;}
+
+#ulf{list-style-type: none;}
+
+#navf{background: transparent;}
+
+.foot{display: block;
+text-decoration: none;
+font-size: 0.87em;
+color: #fff;
+margin-left: 12%;
+font-family: 'Yanone Kaffeesatz', bold;
+text-align: left;}
+
+  .foot:hover{ color: #3EACA8;}
+
+ #textof{
+	display: block;
+	text-decoration: none;
+	font-size: 0.87em;
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: right;
+	color: #fff;
+	margin-top: -15px;
+	margin-right: 3%;
+	float: right;}
+
+}
+
+/*Estilos para tableta*/
+@media only screen and (min-width:361px) and (max-width:768px)
+{
+
+	body{width: 100%;
+	height:1700px;
+	min-width: 570px;
+	max-width: 768px;}
+
+	header{width: 100%;
+		position: fixed;
+		height: 90px;
+		background: #3EACA8;}
+
+	#logorsp{margin-left: 40%;
+			margin-top: 9px;}
+
+	#fecha{float: right;
+			margin-right: 5%;
+			margin-top: 7px;}
+			#logo{display: none;}
+			#medellin{display: none;}
+			#redes{display: none;}
+
+
+	#nav2{display: none;}
+
+	/*Menu hamburguesa*/
+	
+	.menu_bar {
+		z-index: 100;
+		display:block;
+		width:100%;
+		/*height: 90px;*/
+		position: fixed;
+		top:0;
+		background: #000;}
+ 
+	.nav {
+  	position:absolute;
+  	width:200px;
+  	height:100vh;
+  	top:0;
+  	left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  	padding-top:47px;
+  	background-color: rgba(29, 33, 32, 1);
+  	border-right:4px solid #1D96B0;
+  	transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+}
+   /*Estilos de los li del menú*/
+   .limh{
+     display:block;
+     width:96%;
+     margin:0 auto;
+     line-height:2;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 1);
+     border-top:.5px solid rgba(59, 62, 61, 1);
+     background-color:transparent;
+     font-family: 'Yanone Kaffeesatz', bold;
+     font-size: 1em;
+     text-align:center;}
+
+     a{color: #fff;}
+
+
+       /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+       .current:before {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+          border-top:17px solid transparent;
+          border-left:15px solid #1D2120;
+          border-bottom:17px solid transparent;
+          top:0px;
+          right:-15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
+          z-index:4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+       }
+      /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+      .current:after {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
+          border-top:16.5px solid transparent;
+          border-bottom:17px solid transparent;
+          top:.5px;
+          right:-21px;
+          z-index:1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+      }
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle {
+    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px; 
+    border-radius:3px;
+    background-color: #142b25;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index:10;
+  }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle::before {
+      content:"☰";
+      font-size:2em;
+      color: white;
+      margin-top: 5px;
+      position: fixed; }
+
+
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+      display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .nav {
+      left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+      margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle { 
+      left:208px;
+      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+
+
+ 	
+ 	input[type="search"]{
+    width: 15%; /*ancho por defecto*/
+    float: right;
+    margin: -5.5% 4% 0% 20%;
+    background: #ededed url('../images/search-icon.png') no-repeat 9px center; /*icono lupa*/
+   	padding: 9px 10px 9px 32px;
+    border-radius: 8em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+	}
+
+	input[type="search"]:focus{
+   	width: 8%; /*tamaño del boton buscar al hacer click*/
+    padding-left: 20%; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    float: right;
+    background-color: #fff;}
+
+   
+ 	#paracomer1{
+  	width: 50%;
+  	margin-left: 4%;
+  	margin-top: 15%;
+  	height: 355px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#imgid{display: none;}
+ 		#mvlpc1{display: none;}
+ 		#textopc1{display: none;}
+ 		
+ 	#banner1{display: none;}
+
+ 	#galeria1{width: 30%;
+  	margin-left: 4%;
+  	margin-top: 15%;
+  	height: 355px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#mvlgal{display: none;}
+
+ 	#paracomer2{width: 88%;
+ 	margin-left: 4%;
+  	margin-top: 3%;
+  	height: 200px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#imgpc2{display: none;}
+ 		#mvlpc2{display: none;}
+
+ 	#parabailar1{width: 40%;
+  	margin-left: 4%;
+  	margin-top: 3%;
+  	height: 360px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#mvlbailar{display: none;}
+
+ 	#editorial1{width: 40%;
+  	margin-left: 4%;
+  	margin-top: 3%;
+  	height: 360px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#textoedi{display: none;}
+ 		#mvledit{display: none;}
+ 		#imgedi{display: none;}
+ 		
+
+ 	#experiencias1{width: 88%;
+  	margin-left: 4%;
+  	margin-top: 3%;
+  	height: 320px;
+  	background: #fff;
+ 	padding: 2%;
+ 	float: left;}
+ 		#mvlexp{display: none;}
+ 		#imgexp{float: left;
+ 				margin-right: 2%;}
+
+ 	#bannersp{width: 88%;
+ 	padding-left: 2%;
+  	margin-left: 4%;
+  	margin-top: 3%;
+  	height: 120px;
+  	background: #000;  	
+  	float: left;}
+  	iframe{width: 100%;
+ 		height: 100%;}
+
+  			#bannersp2{display: none;}
+
+	.nombreseccion{width: 100px;
+	height: 20px;
+	background:#3EACA8;
+	color: #fff;
+	padding: 5px; 
+	font-size: 1.25em; 
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: left;
+	text-decoration: none;}
+
+	.actualizacion{display: none;}
+
+
+	.tituloid{
+	color: #000;
+	text-decoration: none;
+	font-size: 2.5em; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border-bottom: 2px #000 solid;
+	margin-top: 10px;
+	text-align: left;}
+
+	.entradillaid{color: #547A82;
+	font-size: 1.75em; 
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;}
+		
+	.textos{color: #000;
+	text-decoration: none;
+	font-size: 0.87em;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 10px;}
+
+
+	
+footer{width: 100%;
+height: 108px;
+margin-top: 2.5%;
+padding-top: 2.5%;
+border-top: #fff 0.1em dashed;
+background-color: #000;
+float: left;}
+
+#logo2{margin-top: 1%;
+	margin-left: 80px;
+	margin-right: 9%;
+	margin-bottom: 2%;
+	float: left;}
+
+#ulf{list-style-type: none;}
+
+#navf{display: none;}
+
+.foot{display: block;
+text-decoration: none;
+font-size: 0.87em;
+color: #fff;
+margin-left: 12%;
+font-family: 'Yanone Kaffeesatz', bold;
+text-align: left;}
+
+  
+ #textof{
+	display: block;
+	text-decoration: none;
+	font-size: 0.87em;
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: right;
+	color: #fff;
+	margin-top: 8px;
+	margin-right: 3%;
+	float: right;}
+
+}
+
+/*Estilos para móvil*/
+@media only screen and (max-width:360px) 
+{ 
+
+	body{width: 100%;
+	height:2100px;
+	min-width: 360px;}
+
+	header{width: 100%;
+		position: fixed;
+		margin-top: -30%;
+		height: 90px;
+		background: #3EACA8;}
+
+	#logorsp{margin-left: 30%;
+			margin-top: 20px;}
+
+			#fecha{display: none;}
+			#logo{display: none;}
+			#medellin{display: none;}
+			#redes{display: none;}
+			input{display: none;}
+
+
+	#nav2{display: none;}
+
+	/*Menu hamburguesa*/
+	
+	.menu_bar {
+		z-index: 100;
+		display:block;
+		width:100%;
+		/*height: 90px;*/
+		position: fixed;
+		top:0;
+		background: #000;}
+ 
+	.nav {
+  	position:absolute;
+  	width:150px;
+  	height:100vh;
+  	top:0;
+  	left:-220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  	padding-top:47px;
+  	background-color: rgba(29, 33, 32, 1);
+  	color: #fff;
+  	border-right:4px solid #1D96B0;
+  	transition:all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+}
+	a{color: #fff;}
+
+	 .nav_item{color: #fff;}
+
+   /*Estilos de los li del menú*/
+   .limh{
+     display:block;
+     width:96%;
+     margin:0 auto;
+     line-height:2;
+     position:relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom:.5px solid rgba(59, 62, 61, 1);
+     border-top:.5px solid rgba(59, 62, 61, 1);
+     background-color:transparent;
+     font-family: 'Yanone Kaffeesatz', bold;
+     font-size: 1em;
+     text-align:center;
+     color: #000; }
+
+
+       /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+       .current:before {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+          border-top:17px solid transparent;
+          border-left:15px solid #1D2120;
+          border-bottom:17px solid transparent;
+          top:0px;
+          right:-15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
+          z-index:4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+       }
+      /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+      .current:after {
+          content:"";
+          width:0;
+          height:0;
+          position:absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
+          border-top:16.5px solid transparent;
+          border-bottom:17px solid transparent;
+          top:.5px;
+          right:-21px;
+          z-index:1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+      }
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle {
+    position:absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height:1.1;
+    text-align:center;
+    top:6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px; 
+    border-radius:3px;
+    background-color: #142b25;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index:10;
+  }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle::before {
+      content:"☰";
+      font-size:2em;
+      color: white;
+      margin-top: 10px;
+      position: fixed; }
+
+
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+      display:none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .nav {
+      left:0px; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+      position:fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+      margin-left:200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle { 
+      left:208px;
+      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+
+	#paracomer1{
+  	width: 92%;
+  	margin:0% auto;
+  	margin-top: 93px;
+  	height: 320px;
+  	background: #fff;
+ 	padding: 2%;}
+ 	
+ 		#imgid{display: none;}
+ 		#tblimg{display: none;}
+ 		#mvlpc1{
+ 		margin-right: 2%;
+ 		margin-top:3%;
+ 		float: left; }
+
+ 	#banner1{display: none;}
+
+ 	#galeria1{width: 92%;
+  	margin:0% auto;
+  	margin-top: 3%;
+  	height: 260px;
+  	background: #fff;
+ 	padding: 2%; }
+
+ 		#mvlgal{ 		
+ 		margin-right: 2%;
+ 		margin-top:3%; 		
+ 		float: left; }
+
+ 	#paracomer2{width: 92%;
+  	margin:0% auto;
+  	margin-top: 3%;
+  	height: 325px;
+  	background: #fff;
+ 	padding: 2%;}
+
+ 		#imgpc2{display: none;}
+ 		#mvlpc2{
+ 		margin-right: 2%;
+ 		margin-top:3%;
+ 		float: left; }
+
+ 	#parabailar1{width: 92%;
+  	margin:0% auto;
+  	margin-top: 3%;
+  	height: 300px;
+  	background: #fff;
+ 	padding: 2%;}
+
+ 		#mvlbailar{
+ 		margin-right: 2%;
+ 		margin-top:3%;
+ 		float: left;}
+
+ 	#editorial1{width: 92%;
+  	margin:0% auto;
+  	margin-top: 3%;
+  	height: 300px;
+  	background: #fff;
+ 	padding: 2%;}
+
+ 		#imgedi{display: none;}
+ 		#tblimgedi{display: none;}
+ 		#mvledit{
+ 		margin-right: 2%;
+ 		margin-top:3%;
+ 		float: left;}
+
+ 	#experiencias1{width: 92%;
+  	margin:0% auto;
+  	margin-top: 3%;
+  	height: 250px;
+  	background: #fff;
+ 	padding: 2%;}
+
+ 			#imgexp{display: none;}
+ 			#tblimgedi{display: none;}
+ 			#mvlexp{
+ 			margin-right: 2%;
+ 			margin-top:3%;
+ 			float: left;}
+
+ 	iframe{width: 100%;
+ 		height: 100%;}
+
+ 	#bannersp2{width: 92%;
+ 	padding-left: 2%;
+  	margin-left: 2%;
+  	margin-top: 3%;
+  	height: 100px;
+  	background: #000;}
+  		#bannersp{display: none;}
+
+	.nombreseccion{width: 80px;
+	height: 18px;
+	background:#3EACA8;
+	color: #fff;
+	padding: 5px; 
+	font-size: 1.2em; 
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: left;
+	text-decoration: none;}
+
+	.actualizacion{ display: none;}
+
+
+	.tituloid{
+	color: #000;
+	text-decoration: none;
+	font-size: 2em; 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border-bottom: 2px #000 solid;
+	margin-top: 10px;
+	text-align: left;}
+
+	.entradillaid{color: #547A82;
+	font-size: 1.5em; 
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;}
+		
+	.textos{color: #000;
+	text-decoration: none;
+	font-size: 0.75em;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 10px;}
+
+
+	
+footer{width: 100%;
+height: 108px;
+margin-top: 2.5%;
+padding-top: 2.5%;
+border-top: #fff 0.05em dashed;
+background-color: #000;
+float: left;}
+
+#logo2{display: none;}
+
+#ulf{list-style-type: none;}
+
+#navf{display: none;}
+
+.foot{display: block;
+text-decoration: none;
+font-size: 0.8em;
+color: #fff;
+margin-left: 12%;
+font-family: 'Yanone Kaffeesatz', bold;
+text-align: left;}
+
+  
+ #textof{
+	display: block;
+	text-decoration: none;
+	font-size: 0.87em;
+	font-family: 'Yanone Kaffeesatz', bold;
+	text-align: right;
+	color: #fff;
+	margin-top: 8px;
+	margin-right: 3%;
+	float: right;}
+
+}
+
+ 	
